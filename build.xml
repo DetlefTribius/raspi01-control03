@@ -12,7 +12,7 @@
     <pathelement path="${lib.dir}/pi4j-core.jar"/>
     <pathelement path="${lib.dir}/slf4j-api-1.7.30.jar"/>
     <pathelement path="${lib.dir}/slf4j-simple-1.7.30.jar"/>
-  	<pathelement path="${lib.dir}/i2c.jar"/>
+    <pathelement path="${lib.dir}/pihardware.jar"/>
   	<pathelement path="${lib.dir}/junit-platform-console-standalone-1.6.1.jar"/>
   </path>
 
@@ -26,6 +26,7 @@
       <fileset dir="${bin.dir}" includes="**/*"/>
     </delete>
     <delete file="${dist.dir}/${dist.name}.jar" />
+    <delete file="${dist.dir}/${dist.name}-sources.jar" />
   </target>
 
   <target name="prepare" depends="clean">
